@@ -93,9 +93,31 @@
 // console.log(a);
 
 //Block scope
-function hello() {
-    let x = 10;   // the scope is within in function
-    console.log(x);
+// function hello() {
+//     let x = 10;   // the scope is within in function
+//     console.log(x);
+// }
+// // console.log(x); then it's not working because the scope is within in function.
+// hello();
+
+
+// Arrow Function
+
+
+//closure
+function outer() {
+    let count = 0;
+    function inner() {
+        count++;
+        console.log(count);
+    }
+    return inner;
 }
-// console.log(x); then it's not working because the scope is within in function.
-hello();
+
+let incrementCounter = outer();
+incrementCounter();
+incrementCounter();
+incrementCounter();
+incrementCounter();
+incrementCounter();
+
