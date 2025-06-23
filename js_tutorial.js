@@ -64,9 +64,38 @@
 
 
 //Functions
-function createCourses(coursename) {
-    console.log('creationg ' + coursename);
-}
+// function createCourses(coursename) {
+//     console.log('creationg ' + coursename);
+// }
 
-createCourses('hld');
-createCourses('Cyber Cecurity');
+// createCourses('hld');
+// createCourses('Cyber Cecurity');
+
+//Execution Context
+// 1. memory phase - variable environment
+// 2. code phase - thread of execution
+//hoistion -> before
+// function createCourses(coursename) {
+//     console.log('creationg ' + coursename);
+// }
+
+// createCourses('hld');
+// createCourses('Cyber Cecurity');
+
+
+//window
+// console.log(a);
+// console.log(this.a);
+// console.log(window.a);
+
+// var a = 10;
+
+// console.log(a);
+
+//Block scope
+function hello() {
+    let x = 10;   // the scope is within in function
+    console.log(x);
+}
+// console.log(x); then it's not working because the scope is within in function.
+hello();
