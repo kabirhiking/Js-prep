@@ -19,3 +19,5 @@ map1.delete("b");
 
 console.log(map1.size);
 // Expected output: 2
+
+
