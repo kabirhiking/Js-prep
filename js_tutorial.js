@@ -29,23 +29,35 @@
 
 
 //onject
-let course = {
-    title:"HHLD",
-    description:"project",
-    rating:5
-};
-console.log(course);
-console.log(typeof(course));
+// let course = {
+//     title:"HHLD",
+//     description:"project",
+//     rating:5
+// };
+// console.log(course);
+// console.log(typeof(course));
 
 
-console.log(course.title); // called notation
-console.log(course['description']); // packet notation
+// console.log(course.title); // called notation
+// console.log(course['description']); // packet notation
 
 
-let p = {name: "kabir"};
-let q = p;
+// let p = {name: "kabir"};
+// let q = p;
 
-p.name = "ecosys";
+// p.name = "ecosys";
 
-console.log(p);
-console.log(q);
+// console.log(p);
+// console.log(q);
+
+//Array
+//Reference Types - Object, Arrays, Functions
+//Arrays and Functions are objects
+
+let courses = ["hld", "lld", "dsa", 6, true, null];
+
+console.log(courses[3]);
+console.log(courses[4]);
+console.log(courses[5]);
+
+console.log(typeof(courses));
